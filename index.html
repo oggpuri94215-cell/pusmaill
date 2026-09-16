@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[ชื่อธุรกิจ] — Creative & Bold Agency</title>
+    <!-- Google Fonts: Prompt & Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;0,900;1,800&family=Prompt:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#FF3333',
+                        brandPurple: '#7928CA',
+                        brandYellow: '#FFDE00',
+                        brandGreen: '#00F5A0',
+                        brandDark: '#0A0A0A',
+                    },
+                    fontFamily: {
+                        sans: ['Prompt', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .brutal-card {
+            border: 4px solid #0A0A0A;
+            box-shadow: 8px 8px 0px #0A0A0A;
+            transition: all 0.2s ease-in-out;
+        }
+        .brutal-card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0px #0A0A0A;
+        }
+        .brutal-btn {
+            border: 3px solid #0A0A0A;
+            box-shadow: 5px 5px 0px #0A0A0A;
+            transition: all 0.15s ease;
+        }
+        .brutal-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 7px 7px 0px #0A0A0A;
+        }
+        .brutal-btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px #0A0A0A;
+        }
+    </style>
+</head>
+<body class="bg-brandDark text-white font-sans selection:bg-brandYellow selection:text-black">
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-brandDark/90 backdrop-blur-md border-b-4 border-brandYellow">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="font-display font-black text-2xl lg:text-3xl tracking-wider text-brandYellow">
+                [ชืÉอธุรกิจ]<span class="text-brandRed">.</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 font-bold text-lg">
+                <a href="index.html" class="text-brandYellow border-b-2 border-brandYellow pb-1">หน้าแรก</a>
+                <a href="services.html" class="hover:text-brandGreen transition">บริการ</a>
+                <a href="work.html" class="hover:text-brandRed transition">ผลงาน</a>
+                <a href="process.html" class="hover:text-brandPurple transition">ขั้นตอน</a>
+                <a href="contact.html" class="brutal-btn bg-brandGreen text-black px-5 py-2 text-sm uppercase tracking-wider">ติดต่อเรา</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-brandYellow focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brandDark border-b-4 border-brandYellow px-6 py-4 space-y-4 font-bold">
+            <a href="index.html" class="block text-brandYellow">หน้าแรก</a>
+            <a href="services.html" class="block hover:text-brandGreen">บริการ</a>
+            <a href="work.html" class="block hover:text-brandRed">ผลงาน</a>
+            <a href="process.html" class="block hover:text-brandPurple">ขั้นตอน</a>
+            <a href="contact.html" class="block text-brandGreen">ติดต่อเรา</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden py-24 lg:py-36 bg-brandPurple border-b-4 border-brandDark">
+        <!-- Abstract Shapes Background -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-brandYellow rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-brandRed rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <span class="inline-block bg-brandYellow text-black font-extrabold px-4 py-1.5 text-sm uppercase tracking-widest border-2 border-black">
+                    🔥 Unleash Your Potential
+                </span>
+                <h1 class="font-display font-black text-5xl lg:text-7xl leading-none tracking-tight text-white uppercase drop-shadow-[4px_4px_0px_#000]">
+                    สร้างสรรค์ <span class="text-brandYellow">ดีไซน์</span> ไร้ขีดจำกัด
+                </h1>
+                <p class="text-lg lg:text-xl text-gray-200 font-medium max-w-xl">
+                    เราเปลี่ยนไอเดียสุดโต่งให้กลายเป็นความจริงด้วยพลังแห่งความคิดสร้างสรรค์ เทคโนโลยี และดีไซน์ระดับพรีเมียมที่กระชากทุกสายตา
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="work.html" class="brutal-btn bg-brandYellow text-black px-8 py-4 font-black uppercase tracking-wider text-lg">ดูผลงานของเรา</a>
+                    <a href="contact.html" class="brutal-btn bg-brandGreen text-black px-8 py-4 font-black uppercase tracking-wider text-lg">เริ่มโปรเจกต์เลย</a>
+                </div>
+            </div>
+            
+            <!-- Collage Image Grid -->
+            <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+                <div class="brutal-card bg-brandRed h-48 overflow-hidden transform rotate-2">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" alt="Abstract Art" class="w-full h-full object-cover mix-blend-overlay">
+                </div>
+                <div class="brutal-card bg-brandGreen h-48 overflow-hidden transform -rotate-3 mt-6">
+                    <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=600&q=80" alt="Cyberpunk Tech" class="w-full h-full object-cover mix-blend-overlay">
+                </div>
+                <div class="brutal-card bg-brandYellow col-span-2 h-40 overflow-hidden transform rotate-1">
+                    <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=1000&q=80" alt="Modern Creative" class="w-full h-full object-cover mix-blend-multiply">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="py-24 bg-brandDark px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="font-display font-black text-4xl lg:text-5xl uppercase text-brandGreen">ทำไมต้องเลือก [ชื่อธุรกิจ]?</h2>
+                <p class="text-gray-400 font-medium">เราไม่ได้แค่ออกแบบเว็บ แต่เราสร้างตัวตนและประสบการณ์ที่ฝังตรึงในใจกลุ่มเป้าหมายของคุณ</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="brutal-card bg-brandYellow text-black p-8 space-y-4">
+                    <div class="w-16 h-16 bg-black text-brandYellow flex items-center justify-center font-black text-2xl border-2 border-black">01</div>
+                    <h3 class="font-display font-black text-2xl uppercase">Bold & Unique</h3>
+                    <p class="font-medium text-gray-900">ฉีกทุกกรอบจำเจ ดีไซน์ที่มีเอกลักษณ์เฉพาะตัวสูง ช่วยให้แบรนด์ของคุณโดดเด่นเหนือคู่แข่ง</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="brutal-card bg-brandRed text-white p-8 space-y-4">
+                    <div class="w-16 h-16 bg-white text-black flex items-center justify-center font-black text-2xl border-2 border-black">02</div>
+                    <h3 class="font-display font-black text-2xl uppercase">High Performance</h3>
+                    <p class="font-medium text-gray-100">ระบบโค้ดสะอาด รวดเร็ว รองรับ Responsive ทุกหน้าจอ และปรับแต่งเพื่อการใช้งานที่ดีเยี่ยม</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="brutal-card bg-brandGreen text-black p-8 space-y-4">
+                    <div class="w-16 h-16 bg-black text-brandGreen flex items-center justify-center font-black text-2xl border-2 border-black">03</div>
+                    <h3 class="font-display font-black text-2xl uppercase">Result Driven</h3>
+                    <p class="font-medium text-gray-900">มุ่งเน้นผลลัพธ์ทางธุรกิจ เพิ่มอัตราการแปลงผู้เยี่ยมชมให้กลายเป็นลูกค้าตัวจริง</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white border-t-4 border-brandRed py-12 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div class="space-y-4">
+                <span class="font-display font-black text-2xl text-brandYellow">[ชืÉอธุรกิจ]</span>
+                <p class="text-gray-400 text-sm">เอเจนซี่สร้างสรรค์ดีไซน์และเทคโนโลยีสำหรับธุรกิจยุคใหม่ที่ต้องการความแตกต่างอย่างมีระดับ</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-brandGreen uppercase tracking-wider mb-4">เมนูลัด</h4>
+                <ul class="space-y-2 text-sm font-medium">
+                    <li><a href="index.html" class="hover:text-brandYellow">หน้าแรก</a></li>
+                    <li><a href="services.html" class="hover:text-brandYellow">บริการของเรา</a></li>
+                    <li><a href="work.html" class="hover:text-brandYellow">ผลงานทั้งหมด</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-brandRed uppercase tracking-wider mb-4">สำรวจเพิ่มเติม</h4>
+                <ul class="space-y-2 text-sm font-medium">
+                    <li><a href="process.html" class="hover:text-brandYellow">กระบวนการทำงาน</a></li>
+                    <li><a href="contact.html" class="hover:text-brandYellow">ติดต่อเรา / ขอใบเสนอราคา</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-brandYellow uppercase tracking-wider mb-4">ติดตามเรา</h4>
+                <p class="text-sm text-gray-400 mb-2">อัปเดตไอเดียและผลงานใหม่ๆ ทุกสัปดาห์</p>
+                <div class="flex space-x-3 pt-2">
+                    <span class="w-10 h-10 bg-brandRed border-2 border-white flex items-center justify-center font-black cursor-pointer hover:bg-white hover:text-black transition">FB</span>
+                    <span class="w-10 h-10 bg-brandGreen border-2 border-white flex items-center justify-center font-black text-black cursor-pointer hover:bg-white transition">IG</span>
+                    <span class="w-10 h-10 bg-brandYellow border-2 border-white flex items-center justify-center font-black text-black cursor-pointer hover:bg-white transition">LI</span>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+            &copy; 2026 [ชืÉอธุรกิจ]. All rights reserved. Designed with passion & bold vibes.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
