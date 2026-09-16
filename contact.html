@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อเรา — [ชื่อธุรกิจ]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;0,900;1,800&family=Prompt:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#FF3333',
+                        brandPurple: '#7928CA',
+                        brandYellow: '#FFDE00',
+                        brandGreen: '#00F5A0',
+                        brandDark: '#0A0A0A',
+                    },
+                    fontFamily: {
+                        sans: ['Prompt', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .brutal-card { border: 4px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; transition: all 0.2s ease-in-out; }
+        .brutal-card:hover { transform: translate(-4px, -4px); box-shadow: 12px 12px 0px #0A0A0A; }
+        .brutal-btn { border: 3px solid #0A0A0A; box-shadow: 5px 5px 0px #0A0A0A; transition: all 0.15s ease; }
+        .brutal-btn:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0px #0A0A0A; }
+        .brutal-input { border: 3px solid #0A0A0A; background: #FFF; color: #000; font-weight: 600; }
+        .brutal-input:focus { outline: none; box-shadow: 4px 4px 0px #FF3333; }
+    </style>
+</head>
+<body class="bg-brandDark text-white font-sans selection:bg-brandYellow selection:text-black">
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-brandDark/90 backdrop-blur-md border-b-4 border-brandYellow">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="font-display font-black text-2xl lg:text-3xl tracking-wider text-brandYellow">
+                [ชืÉอธุรกิจ]<span class="text-brandRed">.</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 font-bold text-lg">
+                <a href="index.html" class="hover:text-brandYellow transition">หน้าแรก</a>
+                <a href="services.html" class="hover:text-brandGreen transition">บริการ</a>
+                <a href="work.html" class="hover:text-brandRed transition">ผลงาน</a>
+                <a href="process.html" class="hover:text-brandPurple transition">ขั้นตอน</a>
+                <a href="contact.html" class="text-brandYellow border-b-2 border-brandYellow pb-1">ติดต่อเรา</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden text-brandYellow focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-brandDark border-b-4 border-brandYellow px-6 py-4 space-y-4 font-bold">
+            <a href="index.html" class="block hover:text-brandYellow">หน้าแรก</a>
+            <a href="services.html" class="block hover:text-brandGreen">บริการ</a>
+            <a href="work.html" class="block hover:text-brandRed">ผลงาน</a>
+            <a href="process.html" class="block hover:text-brandPurple">ขั้นตอน</a>
+            <a href="contact.html" class="block text-brandYellow">ติดต่อเรา</a>
+        </div>
+    </header>
+
+    <!-- Header Section -->
+    <section class="py-20 bg-brandYellow text-black border-b-4 border-brandDark px-6">
+        <div class="max-w-7xl mx-auto text-center space-y-4">
+            <span class="bg-black text-brandYellow px-4 py-1 text-xs font-black uppercase tracking-widest border border-black">Get In Touch</span>
+            <h1 class="font-display font-black text-5xl lg:text-7xl uppercase">เริ่มโปรเจกต์ของคุณกับเรา</h1>
+            <p class="font-medium text-lg max-w-2xl mx-auto text-gray-900">มีไอเดียเจ๋งๆ หรือต้องการยกระดับธุรกิจของคุณ? ส่งข้อความหาเราได้เลย ทีมงานพร้อมลุย!</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-24 px-6 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Info Box -->
+        <div class="lg:col-span-5 space-y-8">
+            <div class="brutal-card bg-brandPurple text-white p-8 space-y-6">
+                <h3 class="font-display font-black text-3xl uppercase">ช่องทางการติดต่อ</h3>
+                <p class="font-medium text-gray-200">เราพร้อมพูดคุยและให้คำปรึกษาเบื้องต้นสำหรับทุกโปรเจกต์อย่างไร้ขีดจำกัด</p>
+                
+                <div class="space-y-4 pt-4 border-t-2 border-white/20">
+                    <div class="flex items-start space-x-4">
+                        <span class="w-10 h-10 bg-brandYellow text-black flex items-center justify-center font-black border-2 border-black flex-shrink-0">📍</span>
+                        <div>
+                            <p class="font-bold">ที่ตั้งสำนักงาน</p>
+                            <p class="text-sm text-gray-300">123/45 ถนนสร้างสรรค์ แขวงคลองจั่น เขตบางกะปิ กรุงเทพฯ 10240</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <span class="w-10 h-10 bg-brandGreen text-black flex items-center justify-center font-black border-2 border-black flex-shrink-0">📞</span>
+                        <div>
+                            <p class="font-bold">เบอร์โทรศัพท์</p>
+                            <p class="text-sm text-gray-300">089-123-4567, 02-987-6543</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <span class="w-10 h-10 bg-brandRed text-white flex items-center justify-center font-black border-2 border-black flex-shrink-0">✉️</span>
+                        <div>
+                            <p class="font-bold">อีเมล</p>
+                            <p class="text-sm text-gray-300">hello@[ชื่อธุรกิจ].com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Box -->
+        <div class="lg:col-span-7">
+            <div class="brutal-card bg-brandGreen p-8 lg:p-12">
+                <h3 class="font-display font-black text-3xl uppercase mb-6 text-black">กรอกข้อมูลรายละเอียด</h3>
+                <form action="#" method="POST" class="space-y-6" onsubmit="event.preventDefault(); alert('ส่งข้อมูลเรียบร้อยแล้ว! ทีมงานจะติดต่อกลับโดยเร็วที่สุด');">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="block font-black text-black uppercase text-sm">ชื่อของคุณ *</label>
+                            <input type="text" required class="w-full p-4 brutal-input" placeholder="เช่น สมชาย ใจดี">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block font-black text-black uppercase text-sm">อีเมลติดต่อ *</label>
+                            <input type="email" required class="w-full p-4 brutal-input" placeholder="name@company.com">
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="block font-black text-black uppercase text-sm">บริการที่สนใจ *</label>
+                        <select class="w-full p-4 brutal-input">
+                            <option>Custom Web Design & Development</option>
+                            <option>Brand Identity & Strategy</option>
+                            <option>Creative Campaigns & Ads</option>
+                            <option>Interactive & E-Commerce</option>
+                        </select>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="block font-black text-black uppercase text-sm">รายละเอียดโปรเจกต์ / งบประมาณ</label>
+                        <textarea rows="4" class="w-full p-4 brutal-input" placeholder="เล่ารายละเอียดเบื้องต้นและความต้องการของคุณ..."></textarea>
+                    </div>
+                    <button type="submit" class="brutal-btn w-full bg-brandDark text-white py-4 font-black uppercase tracking-wider text-lg hover:bg-brandRed transition">
+                        ส่งข้อความเริ่มโปรเจกต์ 🔥
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white border-t-4 border-brandYellow py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <span class="font-display font-black text-2xl text-brandYellow">[ชืÉอธุรกิจ]</span>
+            <div class="flex space-x-6 font-bold text-sm">
+                <a href="index.html" class="hover:text-brandYellow">หน้าแรก</a>
+                <a href="services.html" class="hover:text-brandGreen">บริการ</a>
+                <a href="work.html" class="hover:text-brandRed">ผลงาน</a>
+                <a href="process.html" class="hover:text-brandPurple">ขั้นตอน</a>
+                <a href="contact.html" class="hover:text-brandYellow">ติดต่อเรา</a>
+            </div>
+            <p class="text-xs text-gray-500">&copy; 2026 [ชืÉอธุรกิจ]. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ผลงานของเรา — [ชื่อธุรกิจ]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;0,900;1,800&family=Prompt:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#FF3333',
+                        brandPurple: '#7928CA',
+                        brandYellow: '#FFDE00',
+                        brandGreen: '#00F5A0',
+                        brandDark: '#0A0A0A',
+                    },
+                    fontFamily: {
+                        sans: ['Prompt', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .brutal-card { border: 4px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; transition: all 0.2s ease-in-out; }
+        .brutal-card:hover { transform: translate(-4px, -4px); box-shadow: 12px 12px 0px #0A0A0A; }
+        .brutal-btn { border: 3px solid #0A0A0A; box-shadow: 5px 5px 0px #0A0A0A; transition: all 0.15s ease; }
+        .brutal-btn:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0px #0A0A0A; }
+    </style>
+</head>
+<body class="bg-brandDark text-white font-sans selection:bg-brandRed selection:text-white">
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-brandDark/90 backdrop-blur-md border-b-4 border-brandRed">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="font-display font-black text-2xl lg:text-3xl tracking-wider text-brandYellow">
+                [ชืÉอธุรกิจ]<span class="text-brandRed">.</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 font-bold text-lg">
+                <a href="index.html" class="hover:text-brandYellow transition">หน้าแรก</a>
+                <a href="services.html" class="hover:text-brandGreen transition">บริการ</a>
+                <a href="work.html" class="text-brandRed border-b-2 border-brandRed pb-1">ผลงาน</a>
+                <a href="process.html" class="hover:text-brandPurple transition">ขั้นตอน</a>
+                <a href="contact.html" class="brutal-btn bg-brandGreen text-black px-5 py-2 text-sm uppercase tracking-wider">ติดต่อเรา</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden text-brandRed focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-brandDark border-b-4 border-brandRed px-6 py-4 space-y-4 font-bold">
+            <a href="index.html" class="block hover:text-brandYellow">หน้าแรก</a>
+            <a href="services.html" class="block hover:text-brandGreen">บริการ</a>
+            <a href="work.html" class="block text-brandRed">ผลงาน</a>
+            <a href="process.html" class="block hover:text-brandPurple">ขั้นตอน</a>
+            <a href="contact.html" class="block text-brandGreen">ติดต่อเรา</a>
+        </div>
+    </header>
+
+    <!-- Header Section -->
+    <section class="py-20 bg-brandRed text-white border-b-4 border-brandDark px-6">
+        <div class="max-w-7xl mx-auto text-center space-y-4">
+            <span class="bg-brandYellow text-black px-4 py-1 text-xs font-black uppercase tracking-widest border border-black">Selected Works</span>
+            <h1 class="font-display font-black text-5xl lg:text-7xl uppercase">ผลงานที่ภาคภูมิใจ</h1>
+            <p class="font-medium text-lg max-w-2xl mx-auto text-gray-100">รวมผลงานการออกแบบเว็บไซต์และสร้างแบรนด์ที่สร้างแรงบันดาลใจและผลลัพธ์จริงให้แก่ลูกค้า</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            
+            <!-- Project 1 -->
+            <div class="brutal-card bg-brandYellow text-black overflow-hidden flex flex-col">
+                <div class="h-72 overflow-hidden border-b-4 border-black relative">
+                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" alt="Project 1" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    <span class="absolute top-4 left-4 bg-brandRed text-white font-black px-3 py-1 text-xs border-2 border-black">UI/UX Design</span>
+                </div>
+                <div class="p-8 space-y-4 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-display font-black text-3xl uppercase mb-2">NEO FINTECH PLATFORM</h3>
+                        <p class="font-medium text-gray-900">ออกแบบแพลตฟอร์มการเงินดิจิทัลยุคใหม่ เน้นความเรียบง่าย ปลอดภัย และดีไซน์ที่ล้ำสมัย</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t-2 border-black">
+                        <span class="font-bold text-sm">Client: NeoBank Corp.</span>
+                        <span class="font-black text-brandPurple">2026</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="brutal-card bg-brandPurple text-white overflow-hidden flex flex-col">
+                <div class="h-72 overflow-hidden border-b-4 border-black relative">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" alt="Project 2" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    <span class="absolute top-4 left-4 bg-brandGreen text-black font-black px-3 py-1 text-xs border-2 border-black">Brand Identity</span>
+                </div>
+                <div class="p-8 space-y-4 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-display font-black text-3xl uppercase mb-2">URBAN STREETWEAR BRAND</h3>
+                        <p class="font-medium text-gray-200">รีแบรนด์เสื้อผ้าสตรีทแวร์ระดับพรีเมียม ถ่ายทอดตัวตนความดิบ เท่ และดุดันผ่านภาพลักษณ์ใหม่</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t-2 border-white">
+                        <span class="font-bold text-sm">Client: Vibe Culture</span>
+                        <span class="font-black text-brandYellow">2025</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="brutal-card bg-brandGreen text-black overflow-hidden flex flex-col">
+                <div class="h-72 overflow-hidden border-b-4 border-black relative">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Project 3" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    <span class="absolute top-4 left-4 bg-brandYellow text-black font-black px-3 py-1 text-xs border-2 border-black">E-Commerce</span>
+                </div>
+                <div class="p-8 space-y-4 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-display font-black text-3xl uppercase mb-2">ORGANIC GLOW E-SHOP</h3>
+                        <p class="font-medium text-gray-900">สร้างเว็บไซต์อีคอมเมิร์ซเครื่องสำอางออร์แกนิก เพิ่มยอดขายโตขึ้น 150% ใน 3 เดือนแรก</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t-2 border-black">
+                        <span class="font-bold text-sm">Client: Glow Organic</span>
+                        <span class="font-black text-brandRed">2025</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="brutal-card bg-brandRed text-white overflow-hidden flex flex-col">
+                <div class="h-72 overflow-hidden border-b-4 border-black relative">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80" alt="Project 4" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    <span class="absolute top-4 left-4 bg-brandPurple text-white font-black px-3 py-1 text-xs border-2 border-black">Mobile App</span>
+                </div>
+                <div class="p-8 space-y-4 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-display font-black text-3xl uppercase mb-2">FITNESS TRACKER UI</h3>
+                        <p class="font-medium text-gray-100">ออกแบบแอปพลิเคชันออกกำลังกายที่กระตุ้นให้ผู้ใช้งานอยากขยับร่างกายทุกวันด้วย Gamification</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t-2 border-white">
+                        <span class="font-bold text-sm">Client: FitPulse Inc.</span>
+                        <span class="font-black text-brandYellow">2026</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white border-t-4 border-brandRed py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <span class="font-display font-black text-2xl text-brandYellow">[ชืÉอธุรกิจ]</span>
+            <div class="flex space-x-6 font-bold text-sm">
+                <a href="index.html" class="hover:text-brandYellow">หน้าแรก</a>
+                <a href="services.html" class="hover:text-brandGreen">บริการ</a>
+                <a href="work.html" class="hover:text-brandRed">ผลงาน</a>
+                <a href="process.html" class="hover:text-brandPurple">ขั้นตอน</a>
+                <a href="contact.html" class="hover:text-brandYellow">ติดต่อเรา</a>
+            </div>
+            <p class="text-xs text-gray-500">&copy; 2026 [ชืÉอธุรกิจ]. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

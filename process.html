@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ขั้นตอนการทำงาน — [ชื่อธุรกิจ]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;0,900;1,800&family=Prompt:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#FF3333',
+                        brandPurple: '#7928CA',
+                        brandYellow: '#FFDE00',
+                        brandGreen: '#00F5A0',
+                        brandDark: '#0A0A0A',
+                    },
+                    fontFamily: {
+                        sans: ['Prompt', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .brutal-card { border: 4px solid #0A0A0A; box-shadow: 8px 8px 0px #0A0A0A; transition: all 0.2s ease-in-out; }
+        .brutal-card:hover { transform: translate(-4px, -4px); box-shadow: 12px 12px 0px #0A0A0A; }
+        .brutal-btn { border: 3px solid #0A0A0A; box-shadow: 5px 5px 0px #0A0A0A; transition: all 0.15s ease; }
+        .brutal-btn:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0px #0A0A0A; }
+    </style>
+</head>
+<body class="bg-brandDark text-white font-sans selection:bg-brandPurple selection:text-white">
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-brandDark/90 backdrop-blur-md border-b-4 border-brandPurple">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="font-display font-black text-2xl lg:text-3xl tracking-wider text-brandYellow">
+                [ชืÉอธุรกิจ]<span class="text-brandRed">.</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 font-bold text-lg">
+                <a href="index.html" class="hover:text-brandYellow transition">หน้าแรก</a>
+                <a href="services.html" class="hover:text-brandGreen transition">บริการ</a>
+                <a href="work.html" class="hover:text-brandRed transition">ผลงาน</a>
+                <a href="process.html" class="text-brandPurple border-b-2 border-brandPurple pb-1">ขั้นตอน</a>
+                <a href="contact.html" class="brutal-btn bg-brandGreen text-black px-5 py-2 text-sm uppercase tracking-wider">ติดต่อเรา</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden text-brandPurple focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-brandDark border-b-4 border-brandPurple px-6 py-4 space-y-4 font-bold">
+            <a href="index.html" class="block hover:text-brandYellow">หน้าแรก</a>
+            <a href="services.html" class="block hover:text-brandGreen">บริการ</a>
+            <a href="work.html" class="block hover:text-brandRed">ผลงาน</a>
+            <a href="process.html" class="block text-brandPurple">ขั้นตอน</a>
+            <a href="contact.html" class="block text-brandGreen">ติดต่อเรา</a>
+        </div>
+    </header>
+
+    <!-- Header Section -->
+    <section class="py-20 bg-brandPurple text-white border-b-4 border-brandDark px-6">
+        <div class="max-w-7xl mx-auto text-center space-y-4">
+            <span class="bg-brandYellow text-black px-4 py-1 text-xs font-black uppercase tracking-widest border border-black">How We Work</span>
+            <h1 class="font-display font-black text-5xl lg:text-7xl uppercase">ขั้นตอนการทำงานที่ชัดเจน</h1>
+            <p class="font-medium text-lg max-w-2xl mx-auto text-gray-200">กระบวนการทำงานที่เป็นระบบ โปร่งใส และพาคุณไปสู่เป้าหมายได้อย่างแม่นยำไร้รอยต่อ</p>
+        </div>
+    </section>
+
+    <!-- Process Timeline / Steps -->
+    <section class="py-24 px-6 max-w-5xl mx-auto space-y-12">
+        
+        <!-- Step 1 -->
+        <div class="brutal-card bg-brandYellow text-black p-8 lg:p-12 flex flex-col md:flex-row gap-8 items-center">
+            <div class="w-24 h-24 bg-black text-brandYellow flex-shrink-0 flex items-center justify-center font-display font-black text-4xl border-4 border-black">
+                01
+            </div>
+            <div class="space-y-3 flex-1">
+                <span class="bg-brandRed text-white font-bold px-3 py-1 text-xs uppercase tracking-wider border border-black">Discovery & Research</span>
+                <h3 class="font-display font-black text-3xl uppercase">คุยโจทย์และวิเคราะห์เป้าหมาย</h3>
+                <p class="font-medium text-gray-900 leading-relaxed">
+                    เราเริ่มต้นด้วยการรับฟังวิสัยทัศน์ ความต้องการ กลุ่มเป้าหมาย และศึกษาคู่แข่งในตลาด เพื่อวางกลยุทธ์ทิศทางดีไซน์ที่เหมาะสมที่สุดสำหรับคุณ
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="brutal-card bg-brandRed text-white p-8 lg:p-12 flex flex-col md:flex-row gap-8 items-center">
+            <div class="w-24 h-24 bg-white text-black flex-shrink-0 flex items-center justify-center font-display font-black text-4xl border-4 border-black">
+                02
+            </div>
+            <div class="space-y-3 flex-1">
+                <span class="bg-brandYellow text-black font-bold px-3 py-1 text-xs uppercase tracking-wider border border-black">Wireframe & UI Design</span>
+                <h3 class="font-display font-black text-3xl uppercase">ออกแบบโครงสร้างและหน้าตาเว็บ</h3>
+                <p class="font-medium text-gray-100 leading-relaxed">
+                    สร้าง Wireframe เพื่อจำลองการใช้งาน (User Flow) จากนั้นลงมือดีไซน์หน้าตาเว็บไซต์ด้วยสไตล์ Bold & Creative พร้อมส่งมอบ Prototype ให้คุณตรวจเช็ก
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="brutal-card bg-brandGreen text-black p-8 lg:p-12 flex flex-col md:flex-row gap-8 items-center">
+            <div class="w-24 h-24 bg-black text-brandGreen flex-shrink-0 flex items-center justify-center font-display font-black text-4xl border-4 border-black">
+                03
+            </div>
+            <div class="space-y-3 flex-1">
+                <span class="bg-brandPurple text-white font-bold px-3 py-1 text-xs uppercase tracking-wider border border-black">Development & Animation</span>
+                <h3 class="font-display font-black text-3xl uppercase">พัฒนาเว็บไซต์และใส่ลูกเล่น</h3>
+                <p class="font-medium text-gray-900 leading-relaxed">
+                    แปลงดีไซน์ให้กลายเป็นโค้ดจริงที่สะอาด รวดเร็ว รองรับทุกหน้าจอ (Responsive) พร้อมใส่ Micro-interactions และ Animation เล็กๆ น้อยๆ เพื่อชีวิตชีวา
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="brutal-card bg-white text-black p-8 lg:p-12 flex flex-col md:flex-row gap-8 items-center">
+            <div class="w-24 h-24 bg-brandDark text-white flex-shrink-0 flex items-center justify-center font-display font-black text-4xl border-4 border-black">
+                04
+            </div>
+            <div class="space-y-3 flex-1">
+                <span class="bg-brandGreen text-black font-bold px-3 py-1 text-xs uppercase tracking-wider border border-black">Launch & Support</span>
+                <h3 class="font-display font-black text-3xl uppercase">ตรวจสอบระบบและเปิดตัว</h3>
+                <p class="font-medium text-gray-800 leading-relaxed">
+                    ทดสอบระบบความเสถียร ความเร็ว และลิงก์ทั้งหมดก่อนนำเว็บไซต์ขึ้นสู่ Server จริง พร้อมเทรนวิธีใช้งานและดูแลซัพพอร์ตต่อเนื่องหลังบ้าน
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white border-t-4 border-brandPurple py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <span class="font-display font-black text-2xl text-brandYellow">[ชืÉอธุรกิจ]</span>
+            <div class="flex space-x-6 font-bold text-sm">
+                <a href="index.html" class="hover:text-brandYellow">หน้าแรก</a>
+                <a href="services.html" class="hover:text-brandGreen">บริการ</a>
+                <a href="work.html" class="hover:text-brandRed">ผลงาน</a>
+                <a href="process.html" class="hover:text-brandPurple">ขั้นตอน</a>
+                <a href="contact.html" class="hover:text-brandYellow">ติดต่อเรา</a>
+            </div>
+            <p class="text-xs text-gray-500">&copy; 2026 [ชืÉอธุรกิจ]. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
